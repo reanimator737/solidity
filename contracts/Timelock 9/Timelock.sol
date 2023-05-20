@@ -52,7 +52,7 @@ contract Timelock {
         }
 
         (bool success, bytes memory resp) = _to.call{value: _value}(data);
-        require(success, "smth go wrong  ");
+        require(success, "smth go wrong");
 
         return resp;
     }
