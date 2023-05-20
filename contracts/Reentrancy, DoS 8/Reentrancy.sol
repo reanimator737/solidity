@@ -59,7 +59,7 @@ contract DemoProtect {
     function currentBalance()external view returns(uint) {
         return address(this).balance;
     }
-
+    //Такой подход называется pull
     function refund() external{
         uint refundValue = bidders[msg.sender];
         //Вариант номер 1, просто поставить сброс значение раньше ( нужно позаботиться о доп безопастности на случай падения транзакции)
